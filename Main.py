@@ -29,11 +29,11 @@ def Communication():
     # 输出AI回答结果
     data = json.loads(response.text)
     output_text = data['result']
-    entry.delete(0, tkinter.END)
-    text.insert(tkinter.INSERT, input_text)
-    text.insert(tkinter.INSERT, '\n')
-    text.insert(tkinter.INSERT, output_text)
-    text.insert(tkinter.INSERT, '\n')
+    entry.delete(0, tk.END)
+    text.insert(tk.INSERT, input_text)
+    text.insert(tk.INSERT, '\n')
+    text.insert(tk.INSERT, output_text)
+    text.insert(tk.INSERT, '\n')
 
 def get_access_token():
     """
